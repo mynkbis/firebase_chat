@@ -35,12 +35,12 @@
         function App() {
 
         // const [user] = useAuthState(auth);
-       const [user]="Surya"
+      const [user]="Surya"
         
           return (
              <>
             <p >{user} </p>   
-            { user? <ChatRoom />: <Login/>
+            { user? <ChatRoom/>: <Login/>
            }
            </>
           );
@@ -108,8 +108,14 @@
         
           return (<>
             <div className={`message ${messageClass}`}>
-              <img src={photoURL || 'https://3s81si1s5ygj3mzby34dq6qf-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/ab_multi-cloud-1024x959.jpg'} width="50px"/>
+              {/* <img src={photoURL || 'https://3s81si1s5ygj3mzby34dq6qf-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/ab_multi-cloud-1024x959.jpg'} width="10px"/> */}
+
+
+                 <img src={'https://3s81si1s5ygj3mzby34dq6qf-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/ab_multi-cloud-1024x959.jpg'} width="50px"/>    
+                 {/* {if google igned up not used}
+               */}
               <p>{text}</p>
+
             </div>
           </>)
         }
